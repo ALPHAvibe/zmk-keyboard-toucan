@@ -28,9 +28,9 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
 
-        tri_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
+        NAV {
+            if-layers = <5>;
+            then-layer = <6>;
         };
     };
 
@@ -121,9 +121,9 @@
             hold-trigger-on-release;
         };
 
-        hub: hub {
+        hnb: hnb {
             compatible = "zmk,behavior-hold-tap";
-            label = "HUB";
+            label = "HNB";
             bindings = <&kp>, <&nav_back>;
 
             #binding-cells = <2>;
@@ -146,17 +146,17 @@
             >;
         };
 
-        scroll {
-            display-name = "SCROLL";
+        msc {
+            display-name = "MSC";
             bindings = <
-&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &kp LSHFT  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
+&kp TAB  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &kp BSPC  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans  &trans  &kp LSHFT  &studio_unlock  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
         };
 
         sym {
             display-name = "SYM";
             bindings = <
-&kp TAB  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSPC  &kp LCTRL  &trans  &trans  &trans  &trans  &trans  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE  &kp LSHFT  &trans  &trans  &trans  &trans  &trans  &kp UNDER  &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE  &kp LGUI  &trans  &kp SPACE  &kp RET  &trans  &kp RALT
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT  &kp CARET  &kp AMPS  &kp ASTERISK  &kp LPAR  &kp RPAR  &trans  &trans  &kp GRAVE  &kp LEFT_BRACE  &kp LEFT_PARENTHESIS  &kp SQT  &kp UNDERSCORE  &kp MINUS  &kp EQUAL  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp PIPE  &trans  &trans  &kp TILDE  &kp LESS_THAN  &kp LEFT_BRACKET  &kp DOUBLE_QUOTES  &none  &none  &kp PLUS  &kp RIGHT_BRACKET  &kp GREATER_THAN  &kp BACKSLASH  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -167,8 +167,8 @@
             >;
         };
 
-        mouse {
-            display-name = "MOUSE";
+        mse {
+            display-name = "MSC";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
@@ -185,6 +185,12 @@
             display-name = "NUMR";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        nav {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_META 0  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
