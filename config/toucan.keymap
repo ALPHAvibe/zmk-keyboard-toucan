@@ -4,12 +4,16 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define SCROLL 1
+#define MSC 1
 #define SYM 2
 #define ADJ 3
-#define MOUSE 4
+#define MSE 4
 #define NUML 5
 #define NUMR 6
+#define NAV 7
+#define FNCL 8
+#define FNCR 9
+#define MISC 10
 
 &lt {
     tapping-term-ms = <250>;
@@ -194,24 +198,28 @@
         };
 
         nav {
+            display-name = "NAV";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_META 0  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         fncl {
+            display-name = "FNCL";
             bindings = <
 &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none  &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp F11  &kp F12  &kp C_PP  &kp C_PREV  &kp C_NEXT  &none  &none  &trans  &trans  &none  &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &trans  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         fncr {
+            display-name = "FNCR";
             bindings = <
 &none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none  &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp F11  &kp F12  &kp C_PP  &kp C_PREV  &kp C_NEXT  &none  &none  &trans  &trans  &none  &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &trans  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         misc {
+            display-name = "MISC";
             bindings = <
 &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &trans  &trans  &kp CAPSLOCK  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
