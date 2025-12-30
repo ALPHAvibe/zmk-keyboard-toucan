@@ -32,6 +32,11 @@
             if-layers = <5>;
             then-layer = <6>;
         };
+
+        MISC {
+            if-layers = <8>;
+            then-layer = <9>;
+        };
     };
 
     macros {
@@ -142,7 +147,7 @@
         base {
             display-name = "BASE";
             bindings = <
-&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp TAB  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_META F  &lt 4 G  &lt 4 H  &hmr RIGHT_META J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT  &kp LSHFT  &kp Z  &kp X  &kp C  &kp V  &lt 1 B  &lt 1 N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_SHIFT  &mt LS(LA(LEFT_CONTROL)) ESCAPE  &lt 5 BACKSPACE  &kp DELETE  &kp RET  &lt 6 SPACE  &mt RS(RA(RC(RIGHT_META))) TAB
+&kp ESCAPE  &kp Q  &kp W  &kp E  &kp R  &kp T  &kp Y  &kp U  &kp I  &kp O  &kp P  &kp BSPC  &kp TAB  &hml LEFT_SHIFT A  &hml LEFT_CONTROL S  &hml LEFT_ALT D  &hml LEFT_META F  &lt 4 G  &lt 4 H  &hmr RIGHT_META J  &hmr RIGHT_ALT K  &hmr RIGHT_CONTROL L  &hmr RIGHT_SHIFT SEMICOLON  &kp SQT  &lt 8 LEFT_SHIFT  &lt 8 LEFT_SHIFT  &kp X  &kp C  &kp V  &lt 1 B  &lt 1 N  &kp M  &kp COMMA  &kp DOT  &lt 9 SLASH  &lt 9 RIGHT_SHIFT  &mt LS(LA(LEFT_CONTROL)) ESCAPE  &lt 5 BACKSPACE  &lt 2 DELETE  &lt 2 ENTER  &lt 6 SPACE  &mt RS(RA(RC(RIGHT_META))) TAB
             >;
         };
 
@@ -191,6 +196,24 @@
         nav {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_META 0  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        fncl {
+            bindings = <
+&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none  &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp F11  &kp F12  &kp C_PP  &kp C_PREV  &kp C_NEXT  &none  &none  &trans  &trans  &none  &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &trans  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        fncr {
+            bindings = <
+&none  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none  &none  &none  &kp C_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp F11  &kp F12  &kp C_PP  &kp C_PREV  &kp C_NEXT  &none  &none  &trans  &trans  &none  &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC  &trans  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        misc {
+            bindings = <
+&none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &none  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none  &trans  &trans  &kp CAPSLOCK  &none  &none  &none  &none  &none  &none  &none  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
