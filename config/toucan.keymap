@@ -4,9 +4,9 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define SCROLL  1
-#define SYM  2
-#define ADJ  3
+#define SCROLL 1
+#define SYM 2
+#define ADJ 3
 #define MOUSE 7
 #define NUML 8
 #define NUMR 9
@@ -176,6 +176,7 @@
         extra_3 { status = "reserved"; };
 
         mouse {
+            display-name = "MOUSE";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp LCLK  &mkp MCLK  &mkp RCLK
             >;
@@ -184,6 +185,7 @@
         };
 
         numbers_left {
+            display-name = "NUML";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
@@ -192,6 +194,7 @@
         };
 
         numbers_right {
+            display-name = "NUMR";
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
