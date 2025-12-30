@@ -15,7 +15,6 @@
     tapping-term-ms = <250>;
     quick-tap-ms = <220>;
     flavor = "balanced";
-    hold-trigger-on-release;
 };
 
 &mt {
