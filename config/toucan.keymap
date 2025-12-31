@@ -4,17 +4,18 @@
 #include <dt-bindings/zmk/pointing.h>
 
 #define BASE 0
-#define MSC 1
-#define SYM 2
-#define ADJ 3
-#define MSE 4
-#define NUML 5
-#define NUMR 6
-#define NAV 7
-#define FNCL 8
-#define FNCR 9
-#define MISC 10
-#define GAME 11
+#define GAME 1
+#define MSC 2
+#define SYM 3
+#define ADJ 4
+#define MSE 5
+#define NUML 6
+#define NUMR 7
+#define NAV 8
+#define FNCL 9
+#define FNCR 10
+#define MISC 11
+
 
 &lt {
     tapping-term-ms = <250>;
