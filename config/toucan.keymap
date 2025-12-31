@@ -33,13 +33,13 @@
         compatible = "zmk,conditional-layers";
 
         NAV {
-            if-layers = <5>;
-            then-layer = <6>;
+            if-layers = <5 6>;
+            then-layer = <7>;
         };
 
         MISC {
-            if-layers = <8>;
-            then-layer = <9>;
+            if-layers = <8 9>;
+            then-layer = <10>;
         };
     };
 
