@@ -198,9 +198,8 @@
         };
 
         nav {
-            display-name = "NAV";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_META 0  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp HOME  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp END  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LS(LA(LC(LG(NUMBER_1))))  &kp LS(LA(LC(LG(NUMBER_2))))  &kp LS(LA(LC(LG(NUMBER_3))))  &kp LS(LA(LC(LG(NUMBER_4))))  &kp LS(LA(LC(LG(NUMBER_5))))  &kp LS(LA(LC(LG(NUMBER_6))))  &kp LA(LS(LC(LG(NUMBER_7))))  &kp LS(LA(LC(LG(NUMBER_8))))  &kp LS(LA(LC(LG(NUMBER_9))))  &kp LS(LA(LC(LG(NUMBER_0))))  &trans  &trans  &kp LEFT_SHIFT  &hnb LEFT_CONTROL 0  &hnpt LEFT_ALT 0  &hnnt LEFT_META 0  &nav_forward  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &trans  &trans  &kp LS(LA(LC(Z)))  &kp LS(LA(LC(X)))  &kp LS(LA(LC(C)))  &kp LS(LA(LC(V)))  &kp LS(LA(LC(B)))  &kp HOME  &kp PAGE_DOWN  &kp PAGE_DOWN  &kp END  &kp LS(LA(LC(SLASH)))  &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
